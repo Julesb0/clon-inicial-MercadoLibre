@@ -1,0 +1,26 @@
+:root {
+  /* Brand colors */
+  --ml-yellow:      #FFE600;
+  --ml-yellow-dark: #f0d800;
+  --ml-blue:        #2968C8;
+  --ml-blue-dark:   #1a4d99;
+  --ml-blue-deep:   #071435;
+  --ml-dark:        #1a1a2e;
+  --ml-green:       #00a650;
+
+  /* Neutrals */
+  --ml-text:        #333333;
+  --ml-gray:        #666666;
+  --ml-light-gray:  #f5f5f5;
+  --ml-border:      #e0e0e0;
+  --ml-white:       #ffffff;
+
+  /* UI */
+  --radius:         8px;
+  --shadow:         0 2px 12px rgba(0, 0, 0, 0.10);
+  --shadow-hover:   0 8px 24px rgba(0, 0, 0, 0.13);
+
+  /* Layout */
+  --max-width:      1200px;
+  --section-pad:    36px 20px;
+}
