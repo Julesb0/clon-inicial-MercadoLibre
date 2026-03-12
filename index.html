@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MercadoLibre Colombia - Clon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/products.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-top">
+      <a href="#" class="navbar-logo">
+        <svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="19" cy="19" r="19" fill="#2968C8"/>
+          <path d="M10 19.5C10 14.8 14.2 11 19.5 11C24.8 11 29 14.8 29 19.5C29 24.2 24.8 28 19.5 28C14.2 28 10 24.2 10 19.5Z" fill="#FFE600"/>
+          <path d="M15 20L18 23L24 17" stroke="#2968C8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>mercado<strong>libre</strong></span>
+      </a>
+
+      <!-- Buscador -->
+      <div class="search-bar" id="searchBar">
+        <input type="text" id="searchInput" placeholder="Buscar productos, marcas y más..." autocomplete="off" />
+        <button id="searchBtn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24"><path d="M21 21l-5.2-5.2M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
+        </button>
+      </div>
+
+      <div class="navbar-actions">
+        <a href="#">Crea tu cuenta</a>
+        <a href="#">Ingresa</a>
+        <a href="#">Mis compras</a>
+        <a href="#" class="cart-icon" aria-label="Carrito">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-bottom">
+      <span class="location-hint">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Ingresa tu ubicación
+      </span>
+      <a href="#">Categorías ▾</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Cupones</a>
+      <a href="#">Supermercado <span class="badge-new">NUEVO</span></a>
+      <a href="#">Moda</a>
+      <a href="#">Vender</a>
+      <a href="#">Ayuda / PQR</a>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="hero-tag">🔥 3/3 FECHAS DOBLES</span>
+      <h1>Ofertas imperdibles<br>desde <span>50% DCTO</span></h1>
+      <p>Miles de productos con los mejores precios y envío gratis</p>
+      <button class="hero-btn">Ver todas las ofertas →</button>
+    </div>
+  </section>
+
+  <!-- ══════════ SERVICIOS ══════════ -->
+  <section class="section-wrapper" id="servicios">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🚚</div>
+        <h3>Envío Gratis</h3>
+        <p>En tu primera compra y en miles de productos</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔒</div>
+        <h3>Compra Segura</h3>
+        <p>Tu dinero protegido hasta recibir el producto</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💳</div>
+        <h3>Medios de Pago</h3>
+        <p>Tarjeta, efectivo, PSE y más opciones</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏪</div>
+        <h3>MercadoShops</h3>
+        <p>Crea tu propia tienda virtual gratis</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💰</div>
+        <h3>MercadoPago</h3>
+        <p>Billetera digital para pagar y cobrar</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎧</div>
+        <h3>Soporte 24/7</h3>
+        <p>Atención al cliente todo el tiempo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PRODUCTOS ══════════ -->
+  <section class="section-wrapper" id="productos">
+    <h2 class="section-title">Productos Destacados</h2>
+
+    <div class="cat-row">
+      <span class="cat-pill active" data-filter="all">Todos</span>
+      <span class="cat-pill" data-filter="tecnologia">Tecnología</span>
+      <span class="cat-pill" data-filter="moda">Moda</span>
+      <span class="cat-pill" data-filter="hogar">Hogar</span>
+      <span class="cat-pill" data-filter="deportes">Deportes</span>
+    </div>
+
+    <div class="promo-banner">
+      <div>
+        <h3>🏷️ Cupón de bienvenida: 15% OFF</h3>
+        <p>En tu primera compra con MercadoPago. Válido por 24 horas.</p>
+      </div>
+      <button class="promo-btn">Obtener cupón</button>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+      <div class="product-card" data-category="tecnologia">
+        <div class="product-img">📱</div>
+        <div class="product-info">
+          <span class="product-badge">MÁS VENDIDO</span>
+          <p class="product-name">Samsung Galaxy A55 5G 256GB</p>
+          <p><span class="product-original">$ 1.899.000</span><span class="product-discount">-20%</span></p>
+          <p class="product-price">$ 1.519.200</p>
+          <p class="product-shipping">✓ Envío gratis</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="tecnologia">
+        <div class="product-img">💻</div>
+        <div class="product-info">
+          <span class="product-badge">OFERTA</span>
+          <p class="product-name">Laptop HP 15.6" Intel Core i5 16GB</p>
+          <p><span class="product-original">$ 3.200.000</span><span class="product-discount">-15%</span></p>
+          <p class="product-price">$ 2.720.000</p>
+          <p class="product-shipping">✓ Envío gratis</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="tecnologia">
+        <div class="product-img">🎧</div>
+        <div class="product-info">
+          <p class="product-name">Audífonos Sony WH-1000XM5 Noise Cancelling</p>
+          <p><span class="product-original">$ 1.200.000</span><span class="product-discount">-30%</span></p>
+          <p class="product-price">$ 840.000</p>
+          <p class="product-shipping">✓ Envío gratis</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="tecnologia">
+        <div class="product-img">⌚</div>
+        <div class="product-info">
+          <span class="product-badge">NUEVO</span>
+          <p class="product-name">Smartwatch Apple Watch Series 9 45mm</p>
+          <p class="product-price">$ 1.890.000</p>
+          <p class="product-shipping">✓ Envío gratis mañana</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="tecnologia">
+        <div class="product-img">🖥️</div>
+        <div class="product-info">
+          <p class="product-name">Monitor LG 27" 4K UHD IPS 144Hz</p>
+          <p><span class="product-original">$ 1.650.000</span><span class="product-discount">-18%</span></p>
+          <p class="product-price">$ 1.353.000</p>
+          <p class="product-shipping">✓ Envío gratis</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="tecnologia">
+        <div class="product-img">🎮</div>
+        <div class="product-info">
+          <span class="product-badge">MÁS VENDIDO</span>
+          <p class="product-name">PlayStation 5 Slim + Controlador Extra</p>
+          <p class="product-price">$ 2.990.000</p>
+          <p class="product-shipping">✓ Envío gratis</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="moda">
+        <div class="product-img">👟</div>
+        <div class="product-info">
+          <span class="product-badge">OFERTA</span>
+          <p class="product-name">Tenis Nike Air Max 270 Hombre</p>
+          <p><span class="product-original">$ 420.000</span><span class="product-discount">-25%</span></p>
+          <p class="product-price">$ 315.000</p>
+          <p class="product-shipping">✓ Envío gratis</p>
+        </div>
+      </div>
+      <div class="product-card" data-category="deportes">
+        <div class="product-img">🚴</div>
+        <div class="product-info">
+          <p class="product-name">Bicicleta de Montaña Shimano 21V Aro 29</p>
+          <p><span class="product-original">$ 1.100.000</span><span class="product-discount">-10%</span></p>
+          <p class="product-price">$ 990.000</p>
+          <p class="product-shipping">✓ Envío gratis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PORTAFOLIO ══════════ -->
+  <section class="portfolio-section" id="portafolio">
+    <div class="portfolio-inner">
+      <h2 class="section-title light">Equipo de Desarrollo</h2>
+      <p class="portfolio-subtitle">Los profesionales detrás de esta plataforma</p>
+
+      <div class="portfolio-grid">
+
+        <!-- Dev 1 -->
+        <div class="dev-card">
+          <div class="dev-avatar">👨‍💻</div>
+          <p class="dev-name">Carlos Martínez</p>
+          <p class="dev-role">Frontend Developer</p>
+          <p class="dev-bio">Desarrollador apasionado por crear interfaces limpias y accesibles. 3 años de experiencia construyendo productos web escalables.</p>
+          <div class="dev-tags">
+            <span class="dev-tag">React</span>
+            <span class="dev-tag">TypeScript</span>
+            <span class="dev-tag">CSS</span>
+            <span class="dev-tag">Figma</span>
+          </div>
+          <div class="dev-services">
+            <p class="dev-services-title">Servicios</p>
+            <p class="dev-service-item">Desarrollo de UI/UX</p>
+            <p class="dev-service-item">Diseño de componentes</p>
+            <p class="dev-service-item">Optimización de rendimiento</p>
+          </div>
+          <a href="https://github.com" class="dev-github" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Ver GitHub
+          </a>
+        </div>
+
+        <!-- Dev 2 -->
+        <div class="dev-card">
+          <div class="dev-avatar">👩‍💻</div>
+          <p class="dev-name">Diego cerón</p>
+          <p class="dev-role">Backend Developer</p>
+          <p class="dev-bio">Especialista en APIs RESTful y bases de datos. Apasionada por la arquitectura de software limpia y los microservicios.</p>
+          <div class="dev-tags">
+            <span class="dev-tag">Node.js</span>
+            <span class="dev-tag">Python</span>
+            <span class="dev-tag">PostgreSQL</span>
+            <span class="dev-tag">Docker</span>
+          </div>
+          <div class="dev-services">
+            <p class="dev-services-title">Servicios</p>
+            <p class="dev-service-item">Diseño de APIs REST</p>
+            <p class="dev-service-item">Modelado de bases de datos</p>
+            <p class="dev-service-item">Arquitectura de microservicios</p>
+          </div>
+          <a href="https://github.com" class="dev-github" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Ver GitHub
+          </a>
+        </div>
+
+        <!-- Dev 3 -->
+        <div class="dev-card">
+          <div class="dev-avatar">🧑‍💻</div>
+          <p class="dev-name">Julio Bolaños</p>
+          <p class="dev-role">Full Stack Developer</p>
+          <p class="dev-bio">Dev fullstack con enfoque en experiencia de usuario y rendimiento. Experto en integración de sistemas y despliegue en la nube.</p>
+          <div class="dev-tags">
+            <span class="dev-tag">Vue.js</span>
+            <span class="dev-tag">Laravel</span>
+            <span class="dev-tag">AWS</span>
+            <span class="dev-tag">Git</span>
+          </div>
+          <div class="dev-services">
+            <p class="dev-services-title">Servicios</p>
+            <p class="dev-service-item">Desarrollo full stack</p>
+            <p class="dev-service-item">Despliegue en cloud</p>
+            <p class="dev-service-item">Integración de pagos</p>
+          </div>
+          <a href="https://github.com" class="dev-github" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Ver GitHub
+          </a>
+        </div>
+
+        <!-- Dev 4 -->
+        <div class="dev-card">
+          <div class="dev-avatar">👩‍🎨</div>
+          <p class="dev-name">William </p>
+          <p class="dev-role">UI/UX & Dev</p>
+          <p class="dev-bio">Diseñadora y desarrolladora con ojo para el detalle visual. Combina habilidades creativas con código para producir experiencias únicas.</p>
+          <div class="dev-tags">
+            <span class="dev-tag">HTML/CSS</span>
+            <span class="dev-tag">JavaScript</span>
+            <span class="dev-tag">Figma</span>
+            <span class="dev-tag">Tailwind</span>
+          </div>
+          <div class="dev-services">
+            <p class="dev-services-title">Servicios</p>
+            <p class="dev-service-item">Diseño UI/UX</p>
+            <p class="dev-service-item">Prototipado web</p>
+            <p class="dev-service-item">Animaciones CSS</p>
+          </div>
+          <a href="https://github.com" class="dev-github" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Ver GitHub
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer id="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Sobre MercadoLibre</h4>
+        <a href="#">Quiénes somos</a>
+        <a href="#">Trabaja con nosotros</a>
+        <a href="#">Sustentabilidad</a>
+        <a href="#">Prensa</a>
+      </div>
+      <div class="footer-col">
+        <h4>Paga con nosotros</h4>
+        <a href="#">MercadoPago</a>
+        <a href="#">Tarjeta de crédito</a>
+        <a href="#">Efectivo</a>
+        <a href="#">PSE</a>
+      </div>
+      <div class="footer-col">
+        <h4>Vende con nosotros</h4>
+        <a href="#">Cómo vender</a>
+        <a href="#">Tiendas oficiales</a>
+        <a href="#">MercadoShops</a>
+        <a href="#">MercadoEnvíos</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ayuda</h4>
+        <a href="#">Centro de ayuda</a>
+        <a href="#">Seguridad</a>
+        <a href="#">Resolución de problemas</a>
+        <a href="#">Cómo comprar</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legales</h4>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+        <a href="#">Defensa del consumidor</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-logo">mercadolibre</span>
+      <span>© 2025 MercadoLibre S.R.L. — Clon educativo</span>
+      <div class="footer-badges">
+        <span class="footer-badge">SSL Seguro</span>
+        <span class="footer-badge">Compra protegida</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
